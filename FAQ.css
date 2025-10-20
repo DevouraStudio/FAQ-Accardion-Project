@@ -1,0 +1,27 @@
+body {
+	background-image: url(background-pattern-desktop.svg);
+	background-color: hsl(276, 100%, 97%);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Work Sans", sans-serif;
+	text-transform: capitalize;
+	margin: 17rem;
+	padding: 5rem;
+	text-align: justify;
+	height: 45vh;
+}
+
+section.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-sizing: border-box;
+}
