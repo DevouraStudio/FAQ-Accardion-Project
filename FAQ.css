@@ -25,3 +25,54 @@ section.container {
 	border-radius: 1rem;
 	box-sizing: border-box;
 }
+
+span {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.lead {
+	font-size: 16px;
+	font-weight: 350;
+	color: hsl(292, 16%, 49%);
+}
+
+div.container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 2rem;
+}
+
+.h1 {
+	padding-left: 1rem;
+	padding-top: 0.4rem;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+.accordion-button.collapsed::after {
+	background-image: url(icon-plus.svg);
+	background-size: 30px;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+	margin-left: auto;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url(icon-minus.svg);
+	background-size: 30px;
+	padding-left: 2rem;
+	padding-bottom: 2rem;
+	margin-left: auto;
+}
+
+/* I used this psudo class (:not()) instead of (:focus) for better experiences. Hope to be better!*/
+
+.accordion-button:not(.collapsed) {
+	color: rgb(173, 40, 235);
+}
+
+.accordion-button.collapsed:hover {
+	color: rgb(173, 40, 235);
+}
